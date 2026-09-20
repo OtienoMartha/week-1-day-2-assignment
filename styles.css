@@ -1,0 +1,346 @@
+/* ..RESET & BASE */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ..BUSINESS CARD PAGE..*/
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+    margin: 0;
+}
+
+/* --- Card container --- */
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    border-left: 4px solid #4a6cf7;
+}
+
+/* --- Typography --- */
+
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 8px 0;
+}
+
+.card h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a6cf7;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card h3 {
+    font-size: 0.85rem;
+    color: #888;
+    margin: 24px 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Contact info --- */
+
+.contact p,
+.location address {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    font-style: normal;
+}
+
+/* --- Divider --- */
+
+hr {
+    border: none;
+    border-top: 1px solid #eaeaea;
+    margin: 16px 0;
+}
+
+/* --- Links --- */
+
+a {
+    color: #4a6cf7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2d4fd6;
+    text-decoration: underline;
+}
+
+/* --- Social links --- */
+
+.socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li a {
+    padding: 6px 12px;
+    background-color: #f0f3ff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.socials li a:hover {
+    background-color: #4a6cf7;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* --- Footer --- */
+
+.card footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.8rem;
+    color: #999;
+    text-align: center;
+}
+
+/* ...PRICING PAGE — Layout..*/
+
+body.pricing-page {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    margin: 0;
+    padding: 40px 16px;
+    line-height: 1.6;
+    display: block;
+}
+
+/* --- Page header --- */
+
+.pricing-header {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.pricing-header h1 {
+    font-size: 2rem;
+    color: #111;
+    margin: 0 0 12px 0;
+}
+
+.pricing-header p {
+    color: #666;
+    margin: 0;
+}
+
+/* --- Flex container --- */
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .. PRICING PAGE — Cards .. */
+
+.pricing-container .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pricing-container .card h2 {
+    font-size: 1.25rem;
+    color: #111;
+    margin: 0 0 8px 0;
+}
+
+/* --- Price --- */
+
+.pricing-container .card .price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #4a6cf7;
+    margin: 0 0 20px 0;
+    line-height: 1;
+}
+
+.pricing-container .card .price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888;
+}
+
+/* --- Feature list --- */
+
+.pricing-container .card ul {
+    list-style: none;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.pricing-container .card ul li {
+    position: relative;
+    padding: 8px 0 8px 24px;
+    color: #555;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing-container .card ul li:last-child {
+    border-bottom: none;
+}
+
+.pricing-container .card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4a6cf7;
+    font-weight: 700;
+}
+
+/* --- Buttons --- */
+
+.pricing-container .card button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-container .card button:hover {
+    background-color: #2d4fd6;
+}
+
+/* --- Highlighted Pro card --- */
+
+.pricing-container .card--popular {
+    background-color: #f0f3ff;
+    border: 2px solid #4a6cf7;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-container .card--popular .price {
+    color: #2d4fd6;
+}
+
+.pricing-container .card--popular button {
+    background-color: #2d4fd6;
+}
+
+.pricing-container .card--popular button:hover {
+    background-color: #1f3bb5;
+}
+
+/* ---  badge --- */
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 12px;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* --- Hover effects --- */
+
+.pricing-container .card:not(.card--popular):hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-container .card--popular:hover {
+    box-shadow: 0 8px 24px rgba(74, 108, 247, 0.3);
+}
+
+/* ..RESPONSIVE — Mobile (<= 768px).. */
+
+@media (max-width: 768px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    /* Business card */
+    .card {
+        padding: 24px;
+    }
+
+    /* Pricing layout */
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pricing-container .card {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    /* Remove scaling on mobile — it causes horizontal overflow */
+    .pricing-container .card--popular {
+        transform: none;
+    }
+
+    .pricing-container .card:not(.card--popular):hover,
+    .pricing-container .card--popular:hover {
+        transform: none;
+    }
+
+    /* Typography adjustments */
+    .pricing-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .pricing-container .card .price {
+        font-size: 1.8rem;
+    }
+}
